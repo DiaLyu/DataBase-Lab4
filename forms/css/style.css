@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #fff5d7 url(../images/bg.gif) repeat scroll;
+  height: 25em;
+  overflow-y: scroll;
+}
+
+.main .left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.main .left-block .left-block_header,
+.main .right-block .right-block-title,
+.main .right-block .sql-block-content-text {
+  color: #ff9400;
+  margin: 3px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.main .left-block .left-block_btn {
+  width: 350px;
+}
+
+.main .left-block .left-block_btn .btn_CREATE,
+.main .left-block .left-block_btn .btn_SELECT,
+.main .right-block .btn {
+  margin: 5% 10% 5% 10%;
+  color: #19181f;
+  font-weight: 700;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-image: linear-gradient(to top, #8399ae 0%, #8399ae 100%);
+  border-radius: 4px;
+}
+
+.main .right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .right-block .right-block-title,
+.main .right-block .sql-block-content-text {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.main .right-block .btn {
+  margin: 5px;
+  width: 70px;
+  height: 40px;
+}
+
+.main .right-block .add-btn {
+  width: 80px;
+}
+
+.main .right-block .table-block {
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+  border-collapse: collapse;
+  /* Убираем двойные линии между ячейками */
+  border: 1px solid #19181f;
+}
+
+.main .right-block .table-block th {
+  background: #19181f;
+  color: white;
+  text-shadow: 0 1px 1px #2D2020;
+  padding: 10px 20px;
+}
+
+.main .right-block .table-block th,
+td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: #19181f;
+}
+
+.main .right-block .table-block th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.main .right-block .table-block th:last-child {
+  border-top-right-radius: 10px;
+  border-right: none;
+}
+
+.main .right-block .table-block td {
+  padding: 10px 20px;
+  background: #19181f;
+  color: #ff9400;
+  /* font-weight: bold; */
+  text-shadow: 0 1px 1px #2D2020;
+}
+
+.main .right-block .table-block tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+.main .right-block .table-block tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+.main .right-block .table-block tr td:last-child {
+  border-right: none;
+}
+
+.main .right-block .sql-block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
